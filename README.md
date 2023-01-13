@@ -1,1 +1,2 @@
-Just write something
+just an empty file
+just another file to write
