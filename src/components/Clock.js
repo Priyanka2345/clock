@@ -1,20 +1,18 @@
-import { clear } from '@testing-library/user-event/dist/clear';
-import { useState, useEffect } from 'react';
+import Digit from './Digit';
+import Delimiter from './Delimiter';
+import padLeft from '../utils/padleft';
+import useTime from '../hooks/useTime';
+
 function Clock(){
-  const [date, setDate] = useState(new Date());
-  function refreshClock(){
-    setDate(new Date());
-  }
-  useEffect(()=>{
-    const timerId = setInterval(refreshClock, 1000);
-    return function cleanup(){
-      clearInterval(timerId);
-    };
-  },[]);
+  const time = useTime()
   return (
-    <span>
-      {date.toLocaleTimeString()}
-    </span>
+    <>
+      <Digit value={padLeft(time.getHours())}/>
+      <Delimiter value=":"/>
+      <Digit value={padLeft(time.getMinutes())}/>
+      <Delimiter value=":"/>
+      <Digit value={padLeft(time.getSeconds()) }/>
+    </>
   );
 }
 export default Clock
