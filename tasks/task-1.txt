@@ -1,0 +1,13 @@
+Introduction 
+We have learned about custom hooks and how they can help us creating 
+data driven features and at the same time reusable code. This first 
+task is to practise creating another custom hook and a component using it. 
+
+The steps to do to finish the tasks
+1. Create a new branch "task-1" in the Clock repository.
+2. Add a component which is showing the seconds only of our time.
+3. Create a hook for it to support it with data.
+
+Questions? Send me a message!
+
+Have fun!
