@@ -1,6 +1,12 @@
 import Clock from "./components/Clock"
+import Seconds from "./components/Seconds";
 function App() {
-  return <Clock/>
+  return (
+    <>
+    <div><Clock/></div>
+    <div><Seconds/></div> 
+    </>
+  )
 }
 
 export default App;
