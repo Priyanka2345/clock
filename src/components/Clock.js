@@ -18,3 +18,20 @@
 //   );
 // }
 // export default Clock
+import Digit from './Digit';
+import padLeft from '../utils/padLeft';
+import useTime from '../hooks/useTime';
+
+function Clock(){
+  const time = useTime()
+  return (
+    <>
+      <Digit value={padLeft(time.getSeconds()) }/>
+    </>
+  );
+}
+export default Clock
+
+
+
+
