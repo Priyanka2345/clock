@@ -1,3 +1,4 @@
+
 import Clock from "./components/Clock"
 import Second from "./components/Second"
 
@@ -7,8 +8,6 @@ function App() {
             <Clock/>
             <Second/>
         </div>
-
-
 }
 
 export default App;
