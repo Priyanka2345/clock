@@ -1,12 +1,12 @@
 import Digit from './Digit';
 import padLeft from '../utils/padLeft';
-import useTime from '../hooks/useTime';
+import useSeconds from '../hooks/useSeconds';
 
 function Second(){
-  const time = useTime()
+  const getSeconds = useSeconds()
   return (
     <>
-      <Digit value={padLeft(time.getSeconds()) }/>
+      <Digit value={padLeft(getSeconds()) }/>
     </>
   );
 }
