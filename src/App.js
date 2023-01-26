@@ -1,11 +1,13 @@
-import Clock from "./components/Clock";
+
+import Clock from "./components/Clock"
+import Second from "./components/Second"
+
 function App() {
-  return (
-    <>
-      <h1>Headline</h1>
-      <Clock />
-    </>
-  );
+    return
+        <div>
+            <Clock/>
+            <Second/>
+        </div>
 }
 
 export default App;
